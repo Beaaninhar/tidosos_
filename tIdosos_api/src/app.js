@@ -4,7 +4,7 @@ const dotenv = require("dotenv").config();
 const app = express();
 
 app.get("/home", (req, res) => {
-  res.send(`>>> olá`);
+  res.send(`>>> olá <<<`);
 });
 
 app.listen(4001, () =>
