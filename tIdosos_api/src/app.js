@@ -1,9 +1,10 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
 
 const app = express();
 
 app.get("/home", (req, res) => {
-  res.json({ massege: "olá" });
+  res.send(`>>> olá`);
 });
 
 app.listen(4001, () =>
