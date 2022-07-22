@@ -4,10 +4,12 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path");
 const moment = require("moment");
+const routes = require("./routes");
 
 const app = express();
 
 app.use(bodyParser.json());
+app.use(routes);
 
 // *** Configuração do log
 const log = fs.createWriteStream(
@@ -22,22 +24,6 @@ const log = fs.createWriteStream(
 morganBody(app, {
   noColors: true,
   stream: log,
-});
-
-app.get("/home", (req, res) => {
-  res.send(`Olá, mundo!`);
-});
-
-app.get("/produtos", (req, res) => {
-  res.send(`Olá, produtos!`);
-});
-
-app.post("/home", (req, res) => {
-  res.send(`Olá, mundo! (post)`);
-});
-
-app.post("/produtos", (req, res) => {
-  res.send(`Olá, produtos!`);
 });
 
 app.listen(4001, () => console.log("Servidor rodando na porta 4001!"));
