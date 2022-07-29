@@ -1,6 +1,0 @@
-
-Request: GET /home at Mon Jul 04 2022 17:11:17 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
-Response: 404 3.054 ms 
-
-Request: GET /favicon.ico at Mon Jul 04 2022 17:11:20 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36
-Response: 404 0.513 ms 
