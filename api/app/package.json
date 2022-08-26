@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prod": "node src/server.js",
-    "dev": "nodemon src/server.js",
+    "dev": "docker-compose up --build --force-recreate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ana Beatriz",
