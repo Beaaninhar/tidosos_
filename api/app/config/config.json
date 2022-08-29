@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "tidosos",
+    "password": "12345",
+    "database": "data",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "underscored": true
+    }
+  },
+  "production": {
+    "username": "tidosos",
+    "password": "12345",
+    "database": "data",
+    "host": "localhost",
+    "dialect": "postgres",
+    "define": {
+      "timestamps": true,
+      "underscored": true
+    }
+  }
+}
